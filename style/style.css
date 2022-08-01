@@ -39,6 +39,12 @@ h2 {
   font-family: var(--Fraunces);
 }
 
+p {
+  font-family: var(--Barlow);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 /*  header*/
 
 header {
@@ -107,10 +113,32 @@ ul li a {
 main,
 .main-content {
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .first-image {
   background-image: url(/images/desktop/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.second-image {
+  background-image: url(/images/desktop/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.third-image {
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fourth-image {
+  background-image: url(/images/desktop/image-photography.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -123,8 +151,76 @@ main,
   justify-content: center;
 }
 
-.inside-box{
-  border: 1px solid black;
-  width: 50%;
+.inside-box {
+  width: 55%;
   padding: 1rem;
 }
+
+.inside-box h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.inside-box p {
+  margin-bottom: 1rem;
+  color: var(--Very-dark-grayish-blue);
+}
+
+.content-links {
+  color: var(--Very-dark-desaturated-blue);
+  font-family: var(--Fraunces);
+  font-weight: 700;
+  position: relative;
+}
+
+.content-links::after {
+  position: absolute;
+  content: "";
+  background-color: var(--Yellow);
+  width: 0rem;
+  height: .4rem;
+  bottom: .001rem;
+  left: 0;
+  opacity: .5;
+  border-radius:100px;
+  transition: .5s ease;
+}
+
+.content-links:hover::after{
+  width: 6rem;
+}
+
+.content-links-second::after{
+  position: absolute;
+  content: "";
+  background-color: var(--Soft-red);
+  width: 0rem;
+  height: .4rem;
+  bottom: .001rem;
+  left: 0;
+  opacity: .5;
+  border-radius:100px;
+  transition: .5s ease;
+}
+
+.content-links-second:hover::after{
+  width: 6rem;
+}
+
+.graphic-design, .photography{
+  text-align: center;
+  align-self: flex-end;
+  width: 50%;
+}
+
+
+.graphic-design h2, .graphic-design p{
+  color: var(--Dark-moderate-cyan);
+}
+
+.photography h2, .photography p{
+  color: var(--Dark-blue);
+}
+
+
