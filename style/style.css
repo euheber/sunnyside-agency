@@ -51,7 +51,7 @@ p {
 header {
   width: 100%;
   background-color: #3ebfff;
-  background-image: url("/images/desktop/image-header.jpg");
+  background-image: url("../images/desktop/image-header.jpg");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -118,28 +118,28 @@ main,
 }
 
 .first-image {
-  background-image: url(./images/desktop/image-transform.jpg);
+  background-image: url("../images/desktop/image-transform.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .second-image {
-  background-image: url(./images/desktop/image-stand-out.jpg);
+  background-image: url("../images/desktop/image-stand-out.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .third-image {
-  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-image: url("../images/desktop/image-graphic-design.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .fourth-image {
-  background-image: url(./images/desktop/image-photography.jpg);
+  background-image: url("../images/desktop/image-photography.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -292,19 +292,19 @@ main,
 }
 
 .carrosel-milk {
-  background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+  background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
 }
 
 .carrosel-orange {
-  background-image: url("./images/desktop/image-gallery-orange.jpg");
+  background-image: url("../images/desktop/image-gallery-orange.jpg");
 }
 
 .carrosel-cone {
-  background-image: url("./images/desktop/image-gallery-cone.jpg");
+  background-image: url("../images/desktop/image-gallery-cone.jpg");
 }
 
 .carrosel-sugar {
-  background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
+  background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
 }
 
 footer {
