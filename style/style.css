@@ -109,6 +109,51 @@ ul li a {
   margin-bottom: 3rem;
 }
 
+.mobile-btn {
+  display: none;
+  font-size: 2rem;
+  color: var(--White);
+}
+
+.mobile-menu {
+  background-color: var(--White);
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 5rem;
+  position: absolute;
+  text-align: center;
+  display: none;
+}
+
+.mobile-menu ul li a {
+  color: var(--Very-dark-grayish-blue);
+}
+
+.mobile-menu ul li {
+  padding: 1rem;
+}
+
+.mobile-menu.active{
+  display: block;
+}
+
+.contact {
+  background: var(--Yellow);
+  color: black;
+  display: block;
+  width: 7rem;
+  text-align: center;
+  padding: 0.7rem;
+  border-radius: 100px;
+  font-family: var(--Fraunces);
+  font-weight: 900;
+  transition: 0.5s ease;
+  margin: 0 auto;
+}
+
 /* main */
 
 main,
@@ -159,7 +204,6 @@ main,
 
 .inside-box h2 {
   margin-bottom: 1rem;
-  font-size: 2rem;
   color: var(--Very-dark-desaturated-blue);
 }
 
@@ -173,6 +217,7 @@ main,
   font-family: var(--Fraunces);
   font-weight: 700;
   position: relative;
+  z-index: 99;
 }
 
 .content-links::after {
@@ -183,13 +228,38 @@ main,
   height: 0.4rem;
   bottom: 0.001rem;
   left: 0;
-  opacity: 0.5;
+  opacity: 1;
   border-radius: 100px;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
+  z-index: -1;
+}
+
+.content-links::before {
+  position: absolute;
+  content: "";
+  background-color: var(--Yellow);
+  width: 6rem;
+  height: 0.4rem;
+  bottom: 0.001rem;
+  left: 0;
+  opacity: 0.2;
+  border-radius: 100px;
 }
 
 .content-links:hover::after {
   width: 6rem;
+}
+
+.content-links-second::before {
+  position: absolute;
+  content: "";
+  background-color: var(--Soft-red);
+  width: 6rem;
+  height: 0.4rem;
+  bottom: 0.001rem;
+  left: 0;
+  opacity: 0.2;
+  border-radius: 100px;
 }
 
 .content-links-second::after {
@@ -202,7 +272,8 @@ main,
   left: 0;
   opacity: 0.5;
   border-radius: 100px;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
+  z-index: -1;
 }
 
 .content-links-second:hover::after {
@@ -313,8 +384,12 @@ footer {
   background-color: var(--Dark-moderate-cyan);
 }
 
+.logo{
+  max-width: min-content;
+}
+
 #foooter-content {
-  width: 25%;
+  max-width: 360px;
   color: var(--Dark-desaturated-cyan);
   margin: 0 auto;
   text-align: center;
@@ -343,5 +418,38 @@ footer {
   .carrosel-orange,
   .carrosel-sugar {
     width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  #creative {
+    font-size: 2.5rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+  .inside-content {
+    width: 100%;
+    order: 2;
+  }
+
+  .first-image,
+  .second-image {
+    order: 1;
+  }
+
+  .mobile-btn{
+    display: block;
+  }
+}
+
+@media (max-width: 450px){
+  .testimonials{
+    padding: 2rem;
   }
 }
